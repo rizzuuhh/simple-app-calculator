@@ -1,5 +1,7 @@
+import pyfiglet
+
 # Print the title of program
-title = "SIMPLE APP CALCULATOR"
+title = pyfiglet.figlet_format("SIMPLE APP CALCULATOR", font = "bulbhead" )
 print(title)
 
 repeat = True
@@ -7,16 +9,16 @@ repeat = True
 while repeat:
     # Ask the user for there desired operation
     print("\033[36mChoose an operation:")
-    add = ("1 Addition")
+    add = pyfiglet.figlet_format("1 Addition", font = "bubble" )
     print("\033[35m" + add)
 
-    sub = ("2 Subtraction")
+    sub = pyfiglet.figlet_format("2 Subtraction", font = "bubble" )
     print("\033[35m" + sub)
 
-    mul = ("3 Multiplication")
+    mul = pyfiglet.figlet_format("3 Multiplication", font = "bubble" )
     print("\033[35m" + mul)
 
-    div = ("4 Division")
+    div = pyfiglet.figlet_format("4 Division", font = "bubble" )
     print("\033[35m" + div)
 
     try:
@@ -62,7 +64,5 @@ while repeat:
         repeat = False
 
 # Print the output
-ty = ("THANK YOU")
+ty = pyfiglet.figlet_format("THANK YOU", font = "bulbhead" )
 print("\033[29m" + ty)
-
-
