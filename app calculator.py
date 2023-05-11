@@ -40,6 +40,9 @@ while repeat:
     if user_choice == 1:
         result =  first_num +  second_num
         print(f"The result is: {result}")
+    elif user_choice == 2:
+        result = first_num - second_num
+        print(f"The result is: {result}")
 
 # Ask if the user wants to try again
 # Print the output
