@@ -6,21 +6,21 @@ repeat = True
 
 while repeat:
     # Ask the user for there desired operation
-    print("Choose an operation:")
+    print("\033[36mChoose an operation:")
     add = ("1 Addition")
-    print(add)
+    print("\033[35m" + add)
 
     sub = ("2 Subtraction")
-    print(sub)
+    print("\033[35m" + sub)
 
     mul = ("3 Multiplication")
-    print(mul)
+    print("\033[35m" + mul)
 
     div = ("4 Division")
-    print(div)
+    print("\033[35m" + div)
 
     try:
-        user_choice = int(input("Enter your choosen operation (1-4): "))
+        user_choice = int(input("\033[31mEnter your choosen operation (1-4): "))
         if user_choice not in [1, 2, 3, 4]:
             print("Invalid choice. Please enter a valid choice.")
             continue
@@ -57,12 +57,12 @@ while repeat:
             continue
 
     # Ask if the user wants to try again
-    try_again = input("Do you want to try again? (yes/no): ")
+    try_again = input("\033[33mDo you want to try again? (yes/no): ")
     if try_again.lower() != "yes":
         repeat = False
 
 # Print the output
 ty = ("THANK YOU")
-print(ty)
+print("\033[29m" + ty)
 
 
