@@ -46,7 +46,15 @@ while repeat:
     elif user_choice == 3:
         result = first_num * second_num
         print(f"The result is: {result}")
+    else:
+        try:
+            result = first_num / second_num
 
+
+            print(f"The result is: {result} ")
+        except ZeroDivisionError:
+            print("Cannot divide by zero.")
+            continue
 
 # Ask if the user wants to try again
 # Print the output
