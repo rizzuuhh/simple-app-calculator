@@ -36,6 +36,10 @@ while repeat:
         print("Invalid input. Please enter a number.")
         continue
 
-# Perform the selected operation and print the result of calculation
+    # Perform the selected operation and print the result of calculation
+    if user_choice == 1:
+        result =  first_num +  second_num
+        print(f"The result is: {result}")
+
 # Ask if the user wants to try again
 # Print the output
