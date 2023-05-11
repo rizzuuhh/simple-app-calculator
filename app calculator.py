@@ -56,5 +56,9 @@ while repeat:
             print("Cannot divide by zero.")
             continue
 
-# Ask if the user wants to try again
+    # Ask if the user wants to try again
+    try_again = input("Do you want to try again? (yes/no): ")
+    if try_again.lower() != "yes":
+        repeat = False
+
 # Print the output
