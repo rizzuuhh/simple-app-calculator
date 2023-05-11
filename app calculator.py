@@ -28,8 +28,14 @@ while repeat:
         print("Invalid input. Please enter a number.")
         continue
 
+    # Ask user to enter the numbers to be calculated
+    try:
+        first_num = float(input("Enter the 1st number: "))
+        second_num = float(input("Enter the 2nd number: "))
+    except ValueError:
+        print("Invalid input. Please enter a number.")
+        continue
 
-# Ask user to enter the numbers to be calculated
 # Perform the selected operation and print the result of calculation
 # Ask if the user wants to try again
 # Print the output
